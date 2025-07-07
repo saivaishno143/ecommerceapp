@@ -17,10 +17,16 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<ProductDto> getProductById(@PathVariable Long id) throws IOException {
+    public ResponseEntity<ProductDto> getProductById(@PathVariable Long id) throws Exception {
         ProductDto response=this.ProductService.getProductByID(id);
 
         return ResponseEntity.ok(response);
+    }
+    @PostMapping
+    public ResponseEntity<ProductDto> createProduct(@RequestBody ProductDto productDto){
+        // This method is not implemented in the original code, but you can add logic to create a product.
+        // For now, we will return a placeholder response.
+        return ResponseEntity.ok(ProductService.createProduct(productDto));
     }
 
 }

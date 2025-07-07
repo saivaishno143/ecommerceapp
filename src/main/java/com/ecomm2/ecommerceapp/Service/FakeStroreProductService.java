@@ -20,4 +20,10 @@ public class FakeStroreProductService  implements IProductService{
     public ProductDto getProductByID(Long id) throws IOException {
         return this.ProductGateway.getProductById(id);
     }
+
+    @Override
+    public ProductDto createProduct(ProductDto dto) {
+        return null;
+    }
+
 }

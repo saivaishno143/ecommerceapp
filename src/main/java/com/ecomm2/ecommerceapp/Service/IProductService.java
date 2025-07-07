@@ -5,5 +5,8 @@ import com.ecomm2.ecommerceapp.Dto.ProductDto;
 import java.io.IOException;
 
 public interface IProductService {
-    ProductDto getProductByID(Long id) throws IOException;
+    ProductDto getProductByID(Long id) throws Exception;
+
+    ProductDto createProduct(ProductDto dto);
+
 }

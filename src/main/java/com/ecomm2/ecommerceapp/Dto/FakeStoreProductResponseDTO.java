@@ -11,4 +11,6 @@ public class FakeStoreProductResponseDTO{
 	private ProductDto product;
 	private String message;
 	private String status;
+
+
 }
